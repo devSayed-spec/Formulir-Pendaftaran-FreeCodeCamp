@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Formulir Pendaftaran Workshop Teknologi</title>
+</head>
+
+<body>
+  <h1 id="title">Formulir Pendaftaran Workshop Teknologi</h1>
+  <p id="description">Silakan isi formulir di bawah ini untuk mendaftar</p>
+
+  <form id="survey-form">
+    <!-- Input teks -->
+    <label id="name-label" for="name">Masukkan nama:</label>
+    <input id="name" type="text" placeholder="Asep" required />
+
+    <label id="email-label" for="email">Masukkan email:</label>
+    <input id="email" type="email" placeholder="contoh@email.com" required />
+
+    <label id="number-label" for="number">Masukkan umur:</label>
+    <input id="number" type="number" min="1" max="100" placeholder="20" required />
+
+    <!-- Pilihan workshop -->
+    <label for="dropdown">Pilih Workshop yang Ingin Diikuti:</label>
+    <select id="dropdown" required>
+      <option value="">-- Pilih Workshop --</option>
+      <option value="iot">Internet of Things (IoT)</option>
+      <option value="web">Web Development</option>
+      <option value="ai">Artificial Intelligence (AI)</option>
+    </select>
+
+    <!-- Input radio -->
+    <p>Tingkat Pengalaman:</p>
+    <label>
+      <input type="radio" name="pengalaman" value="pemula" required />
+      Pemula
+    </label>
+    <label>
+      <input type="radio" name="pengalaman" value="menengah" />
+      Menengah
+    </label>
+    <label>
+      <input type="radio" name="pengalaman" value="ahli" />
+      Ahli
+    </label>
+
+    <!-- Checkbox -->
+    <p>Topik Teknologi yang Diminati:</p>
+    <label>
+      <input type="checkbox" name="minat" value="iot" />
+      Internet of Things (IoT)
+    </label>
+    <label>
+      <input type="checkbox" name="minat" value="webdev" />
+      Web Development
+    </label>
+    <label>
+      <input type="checkbox" name="minat" value="ai" />
+      Artificial Intelligence (AI)
+    </label>
+
+    <!-- Textarea -->
+    <p>Masukan tambahan:</p>
+    <textarea placeholder="Tuliskan komentar Anda di sini..."></textarea>
+
+    <!-- Tombol submit -->
+    <input id="submit" type="submit" value="Kirim" />
+  </form>
+</body>
+</html>
