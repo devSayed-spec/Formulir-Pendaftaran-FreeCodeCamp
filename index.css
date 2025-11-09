@@ -172,7 +172,25 @@ textarea {
   box-shadow: 0 4px 10px rgba(107, 123, 132, 0.6);
 }
 
-/* ======== RESPONSIVE ======== */
+/* ======== RESPONSIVE DESIGN ======== */
+@media (max-width: 768px) {
+  #survey-form {
+    padding: 28px 25px;
+  }
+
+  #title {
+    font-size: 1.7rem;
+  }
+
+  #description {
+    font-size: 1rem;
+  }
+
+  input, select, textarea, button {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 600px) {
   #survey-form {
     padding: 25px 20px;
@@ -180,5 +198,36 @@ textarea {
 
   #title {
     font-size: 1.6rem;
+  }
+
+  #description {
+    font-size: 0.95rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 8px;
+  }
+
+  #survey-form {
+    padding: 20px 15px;
+  }
+
+  #title {
+    font-size: 1.4rem;
+  }
+
+  #description {
+    font-size: 0.9rem;
+  }
+
+  #submit {
+    font-size: 14px;
+    padding: 12px;
   }
 }
